@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+sklearn = "*"
+matplotlib = "*"
+joblib = "*"
+flask = "*"
+flask-restplus = "*"
+streamlit = "*"
+requests = "*"
+Pillow = "*"
+pylint = "*"
+pytest = "*"
+black = "*"
+seaborn ="*"
+plotly="*"
+statsmodels="*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
+
+[pipenv]
+allow_prereleases = true

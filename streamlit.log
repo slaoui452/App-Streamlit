@@ -1,0 +1,68 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8000
+  Network URL: http://192.168.43.55:8000
+
+2021-12-06 14:17:21.137 Traceback (most recent call last):
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\script_runner.py", line 354, in _run_script
+    exec(code, module.__dict__)
+  File "C:\Users\user\Desktop\python-data-assignment\main.py", line 3, in <module>
+    from src.dashboard import EAD_dashboard, Inference_dashboard, Traning_dashboard
+  File "C:\Users\user\Desktop\python-data-assignment\src\dashboard\EAD_dashboard.py", line 5, in <module>
+    from src.dashboard.Graphs import boxplot_variable,data_overview,Correlation,Data_describe, Graph_3D,Transactions_Timestamp, Fraud_Amount
+ImportError: cannot import name 'Correlation' from 'src.dashboard.Graphs' (C:\Users\user\Desktop\python-data-assignment\src\dashboard\Graphs.py)
+
+2021-12-06 14:17:51.540 Traceback (most recent call last):
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\script_runner.py", line 354, in _run_script
+    exec(code, module.__dict__)
+  File "C:\Users\user\Desktop\python-data-assignment\main.py", line 3, in <module>
+    from src.dashboard import EAD_dashboard, Inference_dashboard, Traning_dashboard
+  File "C:\Users\user\Desktop\python-data-assignment\src\dashboard\EAD_dashboard.py", line 5, in <module>
+    from src.dashboard.Graphs import boxplot_variable,data_overview,Correlation,Data_describe, Graph_3D,Transactions_Timestamp, Fraud_Amount
+ImportError: cannot import name 'Correlation' from 'src.dashboard.Graphs' (C:\Users\user\Desktop\python-data-assignment\src\dashboard\Graphs.py)
+
+2021-12-06 14:18:02.110 Traceback (most recent call last):
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\script_runner.py", line 354, in _run_script
+    exec(code, module.__dict__)
+  File "C:\Users\user\Desktop\python-data-assignment\main.py", line 12, in <module>
+    app.run()
+  File "C:\Users\user\Desktop\python-data-assignment\src\utils.py", line 69, in run
+    page['function']()
+  File "C:\Users\user\Desktop\python-data-assignment\src\dashboard\EAD_dashboard.py", line 21, in EDAApp
+    variable1 = st.selectbox('Variables',Liste_Variables[:-1])
+UnboundLocalError: local variable 'Liste_Variables' referenced before assignment
+
+C:\Users\user\Desktop\python-data-assignment\src\training\train_pipeline.py:67: UserWarning:
+
+Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+
+C:\Users\user\Desktop\python-data-assignment\src\training\train_pipeline.py:69: UserWarning:
+
+Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+
+Exception in thread ScriptRunner.scriptThread:
+Traceback (most recent call last):
+  File "c:\users\user\appdata\local\programs\python\python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "c:\users\user\appdata\local\programs\python\python39\lib\threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\script_runner.py", line 185, in _process_request_queue
+    widget_states = self._session_state.as_widget_states()
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\state\session_state.py", line 559, in as_widget_states
+    return self._new_widget_state.as_widget_states()
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\state\session_state.py", line 210, in as_widget_states
+    states = [
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\state\session_state.py", line 213, in <listcomp>
+    if self.get_serialized(widget_id)
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\state\session_state.py", line 189, in get_serialized
+    serialized = metadata.serializer(item.value)
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\elements\selectbox.py", line 120, in serialize_select_box
+    return index_(opt, v)
+  File "C:\Users\user\.virtualenvs\python-data-assignment-mKy4xfZS\lib\site-packages\streamlit\util.py", line 129, in index_
+    raise ValueError("{} is not in iterable".format(str(x)))
+ValueError: {'title': 'EDA', 'function': <function EDAApp at 0x000001CA1AD9CCA0>} is not in iterable
+C:\Users\user\Desktop\python-data-assignment\src\training\train_pipeline.py:68: UserWarning:
+
+Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+
